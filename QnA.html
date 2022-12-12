@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>review</title>
+    <script src="https://use.fontawesome.com/926fe18a63.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+   
+</head>
+
+<style>
+    @charset "UTF-8";
+
+
+:root{
+  
+        
+    }                     
+
+header{
+    width: 1000px;
+    margin: 20px auto;
+}
+header a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.headB ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+
+
+.headB a {
+    display: block;
+    padding: 10px;
+    color: inherit;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+.headB a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+@media (min-width: 768px) {
+    header .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1000px;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .headB ul{
+        display: flex;
+    }
+}
+
+
+.version{
+    text-decoration: none;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+.version a{
+    background-color: #3A7FE7;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    color: #fff;
+    margin-right: 16px;
+
+}
+.icon{
+    width: 55px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon a{
+    width: 55px;
+    height: 40px;
+    display: block;
+    display: flex;
+    align-items: center ;
+}
+.icon a img{
+    width: 20px;
+    height: 18px;
+}
+    
+
+
+
+
+    .conA {
+        display: flex; 
+        width:100%;
+       align-items: center;
+        justify-content: center;
+        height:400px;
+        min-height: 450px;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        background-image: url(https://i.pinimg.com/474x/9b/a9/cf/9ba9cfa8ab8e9832338eb72fc517d4a9.jpg);
+        
+    }
+    
+
+@keyframes conA{
+    33%{
+      background-image: url(https://i.postimg.cc/MH31xFb4/8c32c133d8bf620f260576d98791548c.jpg);
+    }
+    66%{
+        background-image: url(https://i.postimg.cc/qMbdVxf3/2da462d1eed1e3e3054671e9d295d7ac.jpg);
+    }
+    100%{
+        background-image: url(https://i.postimg.cc/jSwBVVQp/ddd0db9e17afb18fb047c365b5904485.jpg);
+    }
+}
+    .conA h1{
+        margin-top:0;
+        margin-bottom:20px;
+        font-size:80px;
+        color:#ffffff;
+            }
+
+    .conA p{
+        margin-top:0;
+        margin-bottom:0;
+        font-size:20px;
+        color: #fff;
+    }
+
+.conB {
+  width: 600px;
+  margin: 20px auto;
+  margin-bottom: 136px;
+  margin-top: 136px;
+} 
+   
+.layout{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.qna{
+    list-style: none;
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+}
+.qna > li{
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+.qna > li:nth-child(n+2){ /* 아이템 구분 점선 */
+  border-top: 1px dashed #aaa;
+}
+.qna input {
+  display: none;
+}
+
+.qna label { /* 제목 - 클릭 영역 */
+  font-weight: bold;
+  color: #000;
+  margin: 20px 0 0;
+  cursor: pointer;
+}
+.qna label::before { /* 제목 앞 화살표 */
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-left: 8px solid #5E73A9;
+  margin: 2px 0 0 8px;
+  float: left;
+}
+.qna input:checked + label::before { /* 내용 펼침 상태 제목 앞 화살표 */
+  border: 8px solid transparent;
+  border-top: 8px solid #5E73A9;
+  border-bottom: 0;
+  margin: 8px 4px 0;
+}
+
+.qna div { /* 내용 영역 - 기본 감춤 상태 */
+  display: none;
+  color: #666;
+  font-size: 0.9375em;
+  overflow: hidden;
+  padding: 10px 0 10px 30px;
+  box-sizing: border-box;
+  transition: max-height 0.4s;
+}
+.qna input:checked + label + div { /* 내용 영역 펼침 */
+  display: block;
+}
+
+
+    footer{
+
+    color: #fff;
+    
+    background-color: black;
+
+}
+
+footer .container{
+    padding: 40px 20px;
+     width: 1000px;
+    margin: 20px auto;
+}
+
+
+
+@media (min-width: 768px) {
+
+footer  .container{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    .footA {
+        flex: 0 0 40%;
+    }
+
+
+    .footB {
+        flex: 0 0 60%;
+    }
+
+
+    .footC {
+        flex: 0 0 100%;
+    }
+}
+
+
+
+
+
+.footA {
+    margin-bottom: 30px;
+}
+
+.footA h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.2em;
+}
+
+.footA p{
+    margin-top:0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.footA a {
+    color: inherit;
+    text-decoration: none;
+
+}
+
+
+.footB div {
+    margin-bottom: 30px;
+}
+.footB h3{
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: solid 1px currentColor;
+    font-size: 14px;
+
+}
+
+.footB ul {
+    margin:0;
+    padding: 0;
+    list-style: none;
+
+}
+
+
+.footB a {
+    display: block;
+    padding-top: 5px;
+    color: inherit;
+    font-size: 12px;
+    text-decoration: none;
+
+}
+
+
+.footB a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+
+@media (min-width: 768px){
+    .footB {
+        display: flex;
+    }
+
+
+.footB div {
+    flex: 1;
+}
+
+.footB div:not(:first-child) {
+    margin-left: 40px;
+}
+
+}
+
+.footC {
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Montserrat' , sans-serif;
+}
+
+
+.footD {
+    margin-top: 20px;
+
+}
+
+
+
+.footD ul {
+    display: flex;
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.footD a{
+    display: block;
+    margin-right: 8px;
+    padding:0;
+    color: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    border: solid 1px currentColor;
+    width: 2em;
+    line-height:2em;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+
+
+.footD a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+
+
+
+
+</style>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="headA">호스피탈</a>
+
+            <nav class="headB">
+                
+                <ul>
+                    <li><a href="condition.html">상태보고하기</a></li>
+                    <li><a href="news.html">질병뉴스</a></li>
+                    <li><a href=".html">병원예약</a></li>
+                    <li><a href="mypage.html">마이페이지</a></li>
+
+                    <div class="version">
+                        <li><a href="index.html">환자</a></li>
+                        <li><a href="mainpage2.html">의료인</a></li></div>
+
+                    <div class="icon">
+                <a href="">
+                    <img src="https://i.postimg.cc/rmb6v8Rt/free-icon-hamburger-5135168.png" alt="햄버거메뉴바">
+                </a>
+                <a href="">
+                    <img src="https://i.postimg.cc/L8fsDb7T/free-icon-magnifying-glass-49116.png" alt="검색">
+                </a>
+                
+            </div>
+                </ul>
+
+
+            </nav>
+        </div>
+
+        
+    </header>
+
+
+
+
+
+    <section class="conA">
+        <div class="container">
+            
+            <h1>FAQ</h1>
+            <p>무엇이 궁금한가요?</p>
+     
+        </div>
+        <div class="backimg"></div>
+    </section>
+   
+    
+
+
+
+
+<section class="conB">
+<ul class="qna">
+            <li>
+                <input type="checkbox" id="qna-1">
+                <label for="qna-1">이 서비스는 어떤 서비스인가요?</label>
+                <div>
+                    <p>비대면 진료, 병원의 간편 예약, 진료 예약과 커뮤니티까지 바쁜 현대인들을 위해 저희들이 준비한 진료앱입니다.</p>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox" id="qna-2">
+                <label for="qna-2">상태 보고는 어떻게 하나요?</label>
+                <div>
+                    <p>환자 버전으로 로그인 후 키워드로 간편하게 보고할 수 있어요.</p>
+                    <p>그 이외에 또 다른 증상이 있다면 알려주세요, 전문가들이 보고 꼼꼼하게 진단해 드립니다.</p>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox" id="qna-3">
+                <label for="qna-3">마이페이지는 어떻게 활용할 수 있는건가요?</label>
+                <div>
+                    <p>마이페이지에서 가장 큰 특징은 캘린더가 기재되어 있어 병원 일정이 가능하다는 점입니다.</p>
+                    <p>주기적인 병원 방문이 필요하신 분들에게 꼭 필요한 서비스라고 생각해요.</p>
+                    <p>꼭 필요한 진료 일정을 체크하여 건강한 몸을 만들어 보아요.</p>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox" id="qna-4">
+                <label for="qna-4">버전이 있다는데 무슨 혜택이라도 있나요?</label>
+                <div>
+                    <p>전문 자격증이나 공식적인 자격이 있으신 분들이 전문가로써 가입을 하신다면 환자들의 진단을 하실 수 있으며, 이분들에게도 '신뢰도 점수'가 높아지는 등 혜택이 있어요. 자세한 건 문의로 연락주시면 감사하겠습니다.</p>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox" id="qna-5">
+                <label for="qna-5">병원 예약은 어떻게 하나요?</label>
+                <div>
+                    <p>불편한 전화 통화는 이제 그만하세요. </p>
+                    <p>몇 번의 클릭으로 전국 모든 병원 예약을 도와드려요.</p>
+                    <p>최대 4명까지 가족을 추가하고 관리하세요.</p>
+                    
+                </div>
+            </li>
+        </ul>
+  
+    
+</section>
+<footer>
+        <div class="container">
+            <div class="footA">
+            <h2>호스피탈</h2>
+            <p>
+                주소: IT 전문서시 위키구 북스동<br>
+                <a href="https://logger.net/">https://hospital.net/</a>
+            </p>
+
+            <nav class="footD">
+                <ul>
+                    <li><a href="#">
+                        <span class="fa fa-twitter" title="Twitter"></span></a></li>
+                     <li><a href="#">
+                        <span class="fa fa-facebook" title="Facebook"></span></a></li>
+                     <li><a href="#">
+                        <span class="fa fa-google-plus" title="google-plus"></span></a></li>
+                     <li><a href="#">
+                        <span class="fa fa-instagram" title="instagram"></span></a></li>
+                    <li><a href="#">
+                        <span class="fa fa-youtube" title="youtube"></span></a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footB">
+
+
+
+            <div>
+                <h3>ABOUT</h3>
+                <ul>
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">주소</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                    <li><a href="#">문의</a></li>
+                </ul>
+
+
+            </div>
+
+
+            <div>
+                <h3>SUPPORT</h3>
+                <ul>
+                    <li><a href="#">다운로드</a></li>
+                    <li><a href="#">혜택</a></li>
+                    <li><a href="#">자주 묻는 질문</a></li>
+                    <li><a href="#">후기</a></li>
+                </ul>
+
+
+            </div>
+
+
+
+            <div>
+                <h3>CONTENTS</h3>
+                <ul>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">프로필</a></li>
+                    <li><a href="#">개발자</a></li>
+                    <li><a href="#">블로그</a></li>
+                </ul>
+
+
+            </div>
+        </div>
+
+        <div class="footC">
+            © 호스피탈 corp. ALL rights reserved.
+        </div>
+
+
+    </footer>
+
+
+    <style>
+        .sr-only{
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin:-1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border:0;
+        }
+    </style>
+
+
+
+
+</body>
+</html>

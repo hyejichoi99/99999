@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>review</title>
+    <script src="https://use.fontawesome.com/926fe18a63.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+   
+</head>
+
+<style>
+    @charset "UTF-8";
+
+
+:root{
+  
+        
+    }                     
+
+header{
+    width: 1000px;
+    margin: 20px auto;
+}
+header a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.headB ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+
+
+.headB a {
+    display: block;
+    padding: 10px;
+    color: inherit;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+.headB a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+@media (min-width: 768px) {
+    header .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1000px;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .headB ul{
+        display: flex;
+    }
+}
+
+
+.version{
+    text-decoration: none;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+.version a{
+    background-color: #3A7FE7;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    color: #fff;
+    margin-right: 16px;
+
+}
+.icon{
+    width: 55px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon a{
+    width: 55px;
+    height: 40px;
+    display: block;
+    display: flex;
+    align-items: center ;
+}
+.icon a img{
+    width: 20px;
+    height: 18px;
+}
+    
+
+
+
+
+    .conA {
+        display: flex; 
+        width:100%;
+       align-items: center;
+        justify-content: center;
+        height:400px;
+        min-height: 450px;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        background-image: url(https://tophospital.co.kr/m/images/main/center_main_visu.jpg);
+        
+    }
+    
+
+@keyframes conA{
+    33%{
+      background-image: url(https://i.postimg.cc/MH31xFb4/8c32c133d8bf620f260576d98791548c.jpg);
+    }
+    66%{
+        background-image: url(https://i.postimg.cc/qMbdVxf3/2da462d1eed1e3e3054671e9d295d7ac.jpg);
+    }
+    100%{
+        background-image: url(https://i.postimg.cc/jSwBVVQp/ddd0db9e17afb18fb047c365b5904485.jpg);
+    }
+}
+    .conA h1{
+        margin-top:0;
+        margin-bottom:20px;
+        font-size:40px;
+        color:black;
+            }
+
+    .conA p{
+        margin-top:0;
+        margin-bottom:0;
+        font-size:18px;
+        color: black;
+    }
+
+    
+    
+    
+ .conB{
+        width: 1000px;
+        margin: 20px auto;
+    }
+.photo {
+  display: inline-block;
+  position: relative;
+  width: 225px;
+  min-width: 200px;
+  height: 330px;
+  border-radius: 8px;
+  overflow:hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  margin-top: 60px;
+  margin-left: 10px;
+  transition: .5s ease-in-out;
+    transform-style: preserve-3d;
+}
+.photo-img {
+  height: 100%;
+  width: 100%;
+  transition: .5s ease-in-out;
+    transform-style: preserve-3d;
+}
+.photo:hover {
+  box-shadow: -1px 5px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+.photo-description-01 {
+  background: white;
+  position: absolute;
+  top: 65%;
+  left: -5px;
+  height: 65%;
+  width: 128%;
+}
+
+
+
+.photo-name {
+  position: absolute;
+  color: #424242;
+  font-size: 18px;
+  left: 10%;
+  top: 65%;
+  bottom: 35%;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.photo-description {
+  position: absolute;
+  color: #424242;
+  font-weight: 520;
+  font-size: 12px;
+  top: 75%;
+  left: 10%;
+  right:10%;
+  bottom: 5%;
+}
+
+.photo-botton {
+  position: absolute;
+  color: #E5DFD1;
+  right: 30px;
+  bottom: 5%;
+  padding: 5px 10px;
+  border: 0.9px solid #fff;
+  border-radius: 15px;
+  box-shadow:0 4px 4px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+.photo-botton:hover{
+  background-color: #D6DAE0;
+}
+.photo-botton a {
+  color: #424242;
+  text-decoration: none;
+  font-size: 8px;
+}
+
+
+ .conC,
+ .conD,
+ .conE{
+        width: 1000px;
+        margin: 20px auto;
+    }
+.photo {
+  display: inline-block;
+  position: relative;
+  width: 225px;
+  min-width: 200px;
+  height: 330px;
+  border-radius: 8px;
+  overflow:hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  margin-top: 60px;
+  margin-left: 10px;
+}
+.photo-img {
+  height: 100%;
+  width: 100%;
+}
+.photo:hover {
+  box-shadow: -1px 5px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+.photo-description-01 {
+  background: white;
+  position: absolute;
+  top: 65%;
+  left: -5px;
+  height: 65%;
+  width: 128%;
+}
+
+
+
+.photo-name {
+  position: absolute;
+  color: #424242;
+  font-size: 18px;
+  left: 10%;
+  top: 65%;
+  bottom: 35%;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.photo-description {
+  position: absolute;
+  color: #424242;
+  font-weight: 520;
+  font-size: 12px;
+  top: 75%;
+  left: 10%;
+  right:10%;
+  bottom: 5%;
+}
+
+.photo-botton {
+  position: absolute;
+  color: #E5DFD1;
+  right: 30px;
+  bottom: 5%;
+  padding: 5px 10px;
+  border: 0.9px solid #fff;
+  border-radius: 15px;
+  box-shadow:0 4px 4px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+.photo-botton:hover{
+  background-color: #D6DAE0;
+}
+.photo-botton a {
+  color: #424242;
+  text-decoration: none;
+  font-size: 8px;
+}
+
+.conF {
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  margin: 20px auto;
+}
+.page{
+  width: 1000px;
+  margin-left: 250px;
+  margin-top: 56px;
+  margin-bottom: 36px;
+}
+
+.pagination{
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.pagination li{
+  display: inline;
+  text-align: center;
+}
+
+.pagination a{
+  float: left;
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 5px 12px;
+  color: #96a0ad;
+  line-height: 1.5;
+}
+
+
+.first{
+  margin-right: 15px;
+}
+.last{
+  margin-left: 15px;
+}
+
+.first:hover, .last:hover, .left:hover, .right:hover{
+  color: #2e9cdf;
+}
+
+.pagination a.active{
+  cursor: default;
+  color: #ffffff;
+}
+
+.pagination a:active{
+  outline: none;
+}
+
+
+.modal .num{
+  margin-left: 3px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius:100%;
+  border-radius: 100%;
+}
+
+.modal .num:hover{
+  background-color: #2e9cdf;
+  color: #ffffff;
+}
+
+.modal .num.active, .modal .num:active{
+  background-color: #2e9cdf;
+  cursor: pointer;
+}
+
+.arrow-left{
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid blue;
+}
+   
+
+
+
+
+    footer{
+
+    color: #fff;
+    
+    background-color: black;
+
+}
+
+footer .container{
+    padding: 40px 20px;
+     width: 1000px;
+    margin: 20px auto;
+}
+
+
+
+@media (min-width: 768px) {
+
+footer  .container{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    .footA {
+        flex: 0 0 40%;
+    }
+
+
+    .footB {
+        flex: 0 0 60%;
+    }
+
+
+    .footC {
+        flex: 0 0 100%;
+    }
+}
+
+
+
+
+
+.footA {
+    margin-bottom: 30px;
+}
+
+.footA h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.2em;
+}
+
+.footA p{
+    margin-top:0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.footA a {
+    color: inherit;
+    text-decoration: none;
+
+}
+
+
+.footB div {
+    margin-bottom: 30px;
+}
+.footB h3{
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: solid 1px currentColor;
+    font-size: 14px;
+
+}
+
+.footB ul {
+    margin:0;
+    padding: 0;
+    list-style: none;
+
+}
+
+
+.footB a {
+    display: block;
+    padding-top: 5px;
+    color: inherit;
+    font-size: 12px;
+    text-decoration: none;
+
+}
+
+
+.footB a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+
+@media (min-width: 768px){
+    .footB {
+        display: flex;
+    }
+
+
+.footB div {
+    flex: 1;
+}
+
+.footB div:not(:first-child) {
+    margin-left: 40px;
+}
+
+}
+
+.footC {
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Montserrat' , sans-serif;
+}
+
+
+.footD {
+    margin-top: 20px;
+
+}
+
+
+
+.footD ul {
+    display: flex;
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.footD a{
+    display: block;
+    margin-right: 8px;
+    padding:0;
+    color: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    border: solid 1px currentColor;
+    width: 2em;
+    line-height:2em;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+
+
+.footD a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+
+
+
+
+</style>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="headA">호스피탈</a>
+
+            <nav class="headB">
+                
+                <ul>
+                    <li><a href="condition.html">상태보고하기</a></li>
+                    <li><a href="news.html">질병뉴스</a></li>
+                    <li><a href=".html">병원예약</a></li>
+                    <li><a href="mypage.html">마이페이지</a></li>
+
+                    <div class="version">
+                        <li><a href="index.html">환자</a></li>
+                        <li><a href="mainpage2.html">의료인</a></li></div>
+
+                    <div class="icon">
+                <a href="">
+                    <img src="https://i.postimg.cc/rmb6v8Rt/free-icon-hamburger-5135168.png" alt="햄버거메뉴바">
+                </a>
+                <a href="">
+                    <img src="https://i.postimg.cc/L8fsDb7T/free-icon-magnifying-glass-49116.png" alt="검색">
+                </a>
+                
+            </div>
+                </ul>
+
+
+            </nav>
+        </div>
+
+        
+    </header>
+
+
+
+
+
+    <section class="conA">
+        <div class="container">
+            
+            <h1>한눈에 보는 병원 뉴스</h1>
+            <p>여러 분야의 정보들을 한 번에 쉽고 빠르게 확인해보세요!</p>
+     
+        </div>
+        <div class="backimg"></div>
+    </section>
+   
+    <section class="conC">
+
+        <div class="photo brand">
+  <img class="photo-img" src="https://cdn.bokjitimes.com/news/photo/202208/33067_22297_4017.jpg">
+    <div class="photo-description-01"></div>
+    
+
+    <div class="photo-name">
+    <p>아산병원 사태 재발 안돼"</p>
+    </div>
+
+    <div class="photo-description">
+    <p> 최근 서울아산병원에서 간호사가 근무 중 쓰러졌으나...</p>
+    </div>
+
+ 
+
+    <div class="photo-botton">
+    <a href="https://www.bokjitimes.com/news/articleView.html?idxno=33067" target="_blank">Read More</a>
+  </div>
+</div>
+
+
+<div class="photo brand">
+  <img class="photo-img" src="https://pds.medicaltimes.com/NewsPhoto/20220919/1663597437.jpg">
+    <div class="photo-description-01"></div>
+    
+
+    <div class="photo-name">
+    <p>필수의료 확충 머리...</p>
+    </div>
+
+    <div class="photo-description">
+    <p> 보건복지부가 의료단체와 머리를 맞대고 필수의료확충..</p>
+    </div>
+
+ 
+
+    <div class="photo-botton">
+    <a href="https://www.medicaltimes.com/Main/News/NewsView.html?ID=1149521" target="_blank">Read More</a>
+  </div>
+</div>
+
+<div class="photo brand">
+  <img class="photo-img" src="https://www.korea.kr/newsWeb/resources/attaches/2021.02/17/PYH2020030522700001300.jpg">
+    <div class="photo-description-01"></div>
+    
+
+    <div class="photo-name">
+    <p>코로나 19 대응 위해 공..</p>
+    </div>
+
+    <div class="photo-description">
+    <p> 정부는 코로나 19 장기화에 따른 일선 공중보건의사의...</p>
+    </div>
+
+ 
+
+    <div class="photo-botton">
+    <a href="https://www.korea.kr/news/policyNewsView.do?newsId=148884084" target="_blank">Read More</a>
+  </div>
+</div>
+
+<div class="photo brand">
+  <img class="photo-img" src="https://dimg.donga.com/wps/NEWS/IMAGE/2022/08/09/114861332.5.jpg">
+    <div class="photo-description-01"></div>
+    
+
+    <div class="photo-name">
+    <p>빅5 병원도 의사부족 현...</p>
+    </div>
+
+    <div class="photo-description">
+    <p> 24시간 뇌졸중 치료체계구축 필요..</p>
+    </div>
+
+ 
+
+    <div class="photo-botton">
+    <a href="https://www.donga.com/news/It/article/all/20220809/114875375/1" target="_blank">Read More</a>
+  </div>
+</div>
+
+
+    </section>
+
+
+    <section class="conD">
+
+        <div class="photo brand">
+  <img class="photo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2CKS2a2HYiG5olHz4w-lQ_tEuAsZNcJm4NmhMT1WovZLdrchRBBOkmdK0UdO4MJ17j9Y&usqp=CAU">
+    <div class="photo-description-01"></div>
+    
+
+    <div class="photo-name">
+    <p>수가현실화?</p>
+    </div>
+
+    <div class="photo-description">
+    <p> 의료전달체계확립 후 의료 인력 공급량 산출이 순서...</p>
+    </div>
+
+ 
+
+    <div class="photo-botton">
+    <a href="http://www.ggmedinews.com/news/articleView.html?idxno=1121" target="_blank">Read More</a>
+  </div>
+</div>
+
+
+<div class="photo brand">
+  <img class="photo-img" src="http://www.mdon.co.kr/data/photos/20180730/art_15325235174026_ad8a56.jpg">
+    <div class="photo-description-01"></div>
+    
+
+    <div class="photo-name">
+    <p>환자안전, 인공지능, 병..</p>
+    </div>
+
+    <div class="photo-description">
+    <p> 2018년 병원의료계 이슈를 한자리에..?</p>
+    </div>
+
+ 
+
+    <div class="photo-botton">
+    <a href="http://www.mdon.co.kr/news/article.html?no=17503" target="_blank">Read More</a>
+  </div>
+</div>
+
+<div class="photo brand">
+  <img class="photo-img" src="http://img.segye.com/content/image/2021/08/27/20210827512111.jpg">
+    <div class="photo-description-01"></div>
+    
+
+    <div class="photo-name">
+    <p>지자체 러브콜,'몸집불...</p>
+    </div>
+
+    <div class="photo-description">
+    <p> 지자체와 대형병원 '윈윈', 아산병원 청라... </p>
+    </div>
+
+ 
+
+    <div class="photo-botton">
+    <a href="https://m.segye.com/view/20210826519693" target="_blank">Read More</a>
+  </div>
+</div>
+
+<div class="photo brand">
+  <img class="photo-img" src="https://cdn.kosinnews.com/news/photo/202104/20910_21371_5147.jpg">
+    <div class="photo-description-01"></div>
+    
+
+    <div class="photo-name">
+    <p>고신대병원의 은혜 잊지..</p>
+    </div>
+
+    <div class="photo-description">
+    <p> 병원비가 없어 고민하던 러시아인 장기입원환자의 2억원이 넘는...</p>
+    </div>
+
+ 
+
+    <div class="photo-botton">
+    <a href="https://www.kosinnews.com/news/articleView.html?idxno=20910" target="_blank">Read More</a>
+  </div>
+</div>
+
+
+    </section>
+
+
+
+<section class="conE">
+
+        <div class="photo brand">
+  <img class="photo-img" src="https://wimg.mk.co.kr/meet/neds/2018/12/image_readtop_2018_776967_15446271023567401.jpg">
+    <div class="photo-description-01"></div>
+    
+
+    <div class="photo-name">
+    <p>[이슈 토론] 국내 첫 영..</p>
+    </div>
+
+    <div class="photo-description">
+    <p> 제주도가 지난 5일 중국 국유 부동산 개발 업체인 뤼디그룹이...</p>
+    </div>
+
+ 
+
+    <div class="photo-botton">
+    <a href="https://www.mk.co.kr/news/contributors/8595846" target="_blank">Read More</a>
+  </div>
+</div>
+
+
+<div class="photo brand">
+  <img class="photo-img" src="http://www.sisanews.kr/news/photo/202208/91966_72955_171.jpg">
+    <div class="photo-description-01"></div>
+    
+
+    <div class="photo-name">
+    <p>아산병원 간호사 사망..</p>
+    </div>
+
+    <div class="photo-description">
+    <p> 지난달 발생한 서울 아산 병원 간호사 사망사건을 놓고...</p>
+    </div>
+
+ 
+
+    <div class="photo-botton">
+    <a href="http://www.sisanews.kr/news/articleView.html?idxno=91966" target="_blank">Read More</a>
+  </div>
+</div>
+
+<div class="photo brand">
+  <img class="photo-img" src="https://thumbnews.nateimg.co.kr/view610///onimg.nate.com/orgImg/jt/2018/01/05/201801052109020176.jpg.wm.jpg">
+    <div class="photo-description-01"></div>
+    
+
+    <div class="photo-name">
+    <p>중병 앓는 어린이 환자들..</p>
+    </div>
+
+    <div class="photo-description">
+    <p> 부모입장에서 아이가 아픈데, 근처에 갈 병원을 제대로 찾지 못.. </p>
+    </div>
+
+ 
+
+    <div class="photo-botton">
+    <a href="https://m.news.nate.com/view/20180105n33249" target="_blank">Read More</a>
+  </div>
+</div>
+
+<div class="photo brand">
+  <img class="photo-img" src="https://cdn.newsfs.com/news/photo/202205/32223_22767_4939.jpg">
+    <div class="photo-description-01"></div>
+    
+
+    <div class="photo-name">
+    <p>스마트병원'선도모..</p>
+    </div>
+
+    <div class="photo-description">
+    <p> 정부가 올해도 환자의 눈높이에 맞춘 이해와 소통을 지원하는 병원...</p>
+    </div>
+
+ 
+
+    <div class="photo-botton">
+    <a href="https://www.newsfs.com/news/articleView.html?idxno=32223" target="_blank">Read More</a>
+  </div>
+</div>
+
+
+    </section>
+
+
+<section class="conF">
+  <div class="page">
+  <ul class="pagination modal">
+    <li><a href="#" class="first"> 처음 페이지</a></li>
+    <li><a href="#" class="arrow left"><<</a></li>
+    <li><a href="#" class="active num">1</a></li>
+    <li><a href="#" class="num">2</a></li>
+    <li><a href="#" class="num">3</a></li>
+    <li><a href="#" class="num">4</a></li>
+    <li><a href="#" class="num">5</a></li>
+    <li><a href="#" class="num">6</a></li>
+    <li><a href="#" class="num">7</a></li>
+    <li><a href="#" class="num">8</a></li>
+    <li><a href="#" class="num">9</a></li>
+    <li><a href="#" class="arrow right">>></a></li>
+    <li><a href="#" class="last">끝 페이지</a></li>
+
+  </ul>    
+        </div>
+
+<footer>
+        <div class="container">
+            <div class="footA">
+            <h2>호스피탈</h2>
+            <p>
+                주소: IT 전문서시 위키구 북스동<br>
+                <a href="https://logger.net/">https://hospital.net/</a>
+            </p>
+
+            <nav class="footD">
+                <ul>
+                    <li><a href="#">
+                        <span class="fa fa-twitter" title="Twitter"></span></a></li>
+                     <li><a href="#">
+                        <span class="fa fa-facebook" title="Facebook"></span></a></li>
+                     <li><a href="#">
+                        <span class="fa fa-google-plus" title="google-plus"></span></a></li>
+                     <li><a href="#">
+                        <span class="fa fa-instagram" title="instagram"></span></a></li>
+                    <li><a href="#">
+                        <span class="fa fa-youtube" title="youtube"></span></a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footB">
+
+
+
+            <div>
+                <h3>ABOUT</h3>
+                <ul>
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">주소</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                    <li><a href="#">문의</a></li>
+                </ul>
+
+
+            </div>
+
+
+            <div>
+                <h3>SUPPORT</h3>
+                <ul>
+                    <li><a href="#">다운로드</a></li>
+                    <li><a href="#">혜택</a></li>
+                    <li><a href="#">자주 묻는 질문</a></li>
+                    <li><a href="#">후기</a></li>
+                </ul>
+
+
+            </div>
+
+
+
+            <div>
+                <h3>CONTENTS</h3>
+                <ul>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">프로필</a></li>
+                    <li><a href="#">개발자</a></li>
+                    <li><a href="#">블로그</a></li>
+                </ul>
+
+
+            </div>
+        </div>
+
+        <div class="footC">
+            © 호스피탈 corp. ALL rights reserved.
+        </div>
+
+
+    </footer>
+
+
+    <style>
+        .sr-only{
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin:-1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border:0;
+        }
+    </style>
+
+
+
+
+</body>
+</html>

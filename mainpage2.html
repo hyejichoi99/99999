@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>review</title>
+    <script src="https://use.fontawesome.com/926fe18a63.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+   
+</head>
+
+<style>
+    @charset "UTF-8";
+
+
+:root{
+  
+        
+    }                     
+
+header{
+    width: 1000px;
+    margin: 20px auto;
+}
+header a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.headB ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+
+
+.headB a {
+    display: block;
+    padding: 10px;
+    color: inherit;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+.headB a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+@media (min-width: 768px) {
+    header .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1000px;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .headB ul{
+        display: flex;
+    }
+}
+
+
+.version{
+    text-decoration: none;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+.version a{
+    background-color: #3A7FE7;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    color: #fff;
+    margin-right: 16px;
+
+}
+.icon{
+    width: 55px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon a{
+    width: 55px;
+    height: 40px;
+    display: block;
+    display: flex;
+    align-items: center ;
+}
+.icon a img{
+    width: 20px;
+    height: 18px;
+}
+    
+
+
+
+
+    .conA {
+        display: flex; 
+        width:100%;
+       align-items: center;
+        justify-content: center;
+        height:400px;
+        min-height: 450px;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        background-image: url(https://i.postimg.cc/rmvCgdZD/SSI-20200601230427.jpg);
+        animation: backimg 13s infinite;
+        
+    }
+    
+
+@keyframes backimg{
+    33%{
+      background-image: url(https://www.bonebest.co.kr/images/hospital-inside-mobile/Hospitalization-room/Hospitalization-room3.jpg);
+    }
+    66%{
+        background-image: url(https://pds.medicaltimes.com/NewsPhoto/201910/1129774_1.jpg);
+    }
+    100%{
+        background-image: url(https://i.postimg.cc/rmvCgdZD/SSI-20200601230427.jpg);
+    }
+}
+    .conA h1{
+        margin-top:0;
+        margin-bottom:20px;
+        font-size:40px;
+        color:#fff;
+            }
+
+    .conA p{
+        margin-top:0;
+        margin-bottom:0;
+        font-size:18px;
+        color: #fff;
+    }
+
+    
+    
+    
+.conB{
+     width: 1000px;
+     margin:20px auto;
+     max-width: 1000px;
+
+}
+   
+
+    .conB h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .conB p{
+        margin-top: 10;
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 1.8;
+        opacity: 0.8;
+    }
+
+    .conB a {
+        color: black;
+        text-decoration: none;
+    }
+
+
+    .conB a:hover{
+        text-decoration: underline;
+    }
+
+    .conB .gif-img{
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 20px;
+        width: 2em;
+        line-height: 1em;
+        border-radius: 50%;
+        text-align: center;
+        background-color: white;
+        color: #fff;
+        
+    }
+
+    .conB .text{
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+       
+        
+
+    }
+
+
+
+    @media (min-width: 768px) {
+        .conB .container {
+            display: flex;
+            max-width: 1000px;
+            max-width: var(--large-width);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .conB .text {
+            flex: 1;
+        }
+
+
+    }
+
+    .conB .container{
+        padding-top: 80px;
+        padding-bottom: 20px;
+
+
+    }
+
+    .conC{
+        width: 1000px;
+        margin: 20px auto;
+    }
+.photo {
+  display: inline-block;
+  position: relative;
+  width: 225px;
+  min-width: 200px;
+  height: 330px;
+  border-radius: 8px;
+  overflow:hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  margin-top: 60px;
+  margin-left: 10px;
+}
+.photo-img {
+  height: 100%;
+  width: 100%;
+}
+.photo:hover {
+  box-shadow: -1px 5px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+.photo-description-01 {
+  background: white;
+  position: absolute;
+  top: 65%;
+  left: -5px;
+  height: 65%;
+  width: 128%;
+}
+
+
+
+.photo-name {
+  position: absolute;
+  color: #424242;
+  font-size: 18px;
+  left: 10%;
+  top: 65%;
+  bottom: 35%;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.photo-description {
+  position: absolute;
+  color: #424242;
+  font-weight: 520;
+  font-size: 12px;
+  top: 75%;
+  left: 10%;
+  right:10%;
+  bottom: 5%;
+}
+
+.photo-botton {
+  position: absolute;
+  color: #E5DFD1;
+  right: 30px;
+  bottom: 5%;
+  padding: 5px 10px;
+  border: 0.9px solid #fff;
+  border-radius: 15px;
+  box-shadow:0 4px 4px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+.photo-botton:hover{
+  background-color: #D6DAE0;
+}
+.photo-botton a {
+  color: #424242;
+  text-decoration: none;
+  font-size: 8px;
+}
+    
+.conD .container{
+    width: 1000px;
+    margin: 20px auto;
+        padding-top: 2px;
+    }
+    
+
+    .conD .text {
+        padding:20px;
+    }
+
+
+    .conD h2{
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 40px;
+    }
+
+
+    .conD p {
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-size: 12px;
+        line-height: 1.8;
+        opacity: 0.8;
+    }
+
+
+    .conD a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 30px;
+        box-shadow: 0 0 0 1px #888;
+        border: solid 2px currentColor;
+        border-radius: 5px;
+        background-color: #BF6A7A;
+        color: #fff;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+
+    .conD a:hover{
+        background-image: linear-gradient (
+            rgba(255,255,255,0.2), rgba(255,255,255,0.2));
+    }
+
+    .conD .photo {
+        min-height: 200px;
+        background-image: url(http://www.boannews.com/media/upFiles2/2021/07/118988287_9667.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    @media (min-width: 768px) {
+        .conD .container{
+            display: flex;
+            flex-direction: row-reverse;
+            max-width: 1000px;
+            max-width: var(--large-width);
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+
+        .conD .photo {
+            flex: 0 0 400px;
+        }
+
+
+        .conD .text {
+            flex: 1;
+            padding:50px;
+        }
+    }
+
+.conE {
+    width: 1000px;
+    margin: 20px auto;
+}
+.conE .container{
+  display:grid;
+  background-color:white;
+  grid-template-columns: repeat(5,1fr) ;
+  grid-template-rows: 150px 150px 150px  ;
+  gap: 20px 20px;
+}
+
+
+
+
+.conE .item:nth-child(1){
+  background-color:red;
+  grid-row-start:1;
+  grid-row-end:3;
+  grid-column-start:1;
+  grid-column-end:3;
+  background-image: url(https://i.postimg.cc/BvN434cQ/hos.png);
+  
+  
+}
+
+.conE .item:nth-child(2){
+  background-color:yellow;
+  grid-row-start:2;
+  grid-row-end:4;
+  grid-column-start:3;
+  grid-column-end:4;
+  background-image: url(https://i.postimg.cc/hGbDyV3w/A.png);
+  
+}
+
+
+.conE .item:nth-child(3){
+  background-color:orange;
+  grid-row-start:2;
+  grid-row-end:4;
+  grid-column-start:4;
+  grid-column-end:6;
+  background-image: url(https://i.postimg.cc/9XShBxQ0/L.png);
+ 
+}
+
+.conE .item:nth-child(4){
+  background-color:pink;
+  grid-row-start:3;
+  grid-row-end:4;
+  grid-column-start:1;
+  grid-column-end:3;
+  background-image: url(https://i.postimg.cc/cCWQq7sn/t.png);
+  
+  
+}
+
+.conE .item:nth-child(5){
+  background-color:blue;
+  grid-row-start:1;
+  grid-row-end:2;
+  grid-column-start:3;
+  grid-column-end:6;
+  background-image: url(https://i.postimg.cc/y6jQTW6N/pi.png);
+}
+    footer{
+    color: #fff;
+    
+    background-color: black;
+
+}
+
+footer .container{
+    padding: 40px 20px;
+     width: 1000px;
+    margin: 20px auto;
+}
+
+
+
+@media (min-width: 768px) {
+
+footer  .container{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    .footA {
+        flex: 0 0 40%;
+    }
+
+
+    .footB {
+        flex: 0 0 60%;
+    }
+
+
+    .footC {
+        flex: 0 0 100%;
+    }
+}
+
+
+
+
+
+.footA {
+    margin-bottom: 30px;
+}
+
+.footA h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.2em;
+}
+
+.footA p{
+    margin-top:0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.footA a {
+    color: inherit;
+    text-decoration: none;
+
+}
+
+
+.footB div {
+    margin-bottom: 30px;
+}
+.footB h3{
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: solid 1px currentColor;
+    font-size: 14px;
+
+}
+
+.footB ul {
+    margin:0;
+    padding: 0;
+    list-style: none;
+
+}
+
+
+.footB a {
+    display: block;
+    padding-top: 5px;
+    color: inherit;
+    font-size: 12px;
+    text-decoration: none;
+
+}
+
+
+.footB a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+
+@media (min-width: 768px){
+    .footB {
+        display: flex;
+    }
+
+
+.footB div {
+    flex: 1;
+}
+
+.footB div:not(:first-child) {
+    margin-left: 40px;
+}
+
+}
+
+.footC {
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Montserrat' , sans-serif;
+}
+
+
+.footD {
+    margin-top: 20px;
+
+}
+
+
+
+.footD ul {
+    display: flex;
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.footD a{
+    display: block;
+    margin-right: 8px;
+    padding:0;
+    color: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    border: solid 1px currentColor;
+    width: 2em;
+    line-height:2em;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+
+
+.footD a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+
+
+
+
+</style>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="headA">호스피탈</a>
+
+            <nav class="headB">
+                
+                <ul>
+                    <li><a href="condition.html">상태보고하기</a></li>
+                    <li><a href="news.html">질병뉴스</a></li>
+                    <li><a href="about.html">병원예약</a></li>
+                    <li><a href="mypage.html">마이페이지</a></li>
+
+                    <div class="version">
+                        <li><a href="index.html">환자</a></li>
+                        <li><a href="mainpage2.html">의료인</a></li></div>
+
+                    <div class="icon">
+                <a href="">
+                    <img src="https://i.postimg.cc/rmb6v8Rt/free-icon-hamburger-5135168.png" alt="햄버거메뉴바">
+                </a>
+                <a href="">
+                    <img src="https://i.postimg.cc/L8fsDb7T/free-icon-magnifying-glass-49116.png" alt="검색">
+                </a>
+                
+            </div>
+                </ul>
+
+
+            </nav>
+        </div>
+
+        
+    </header>
+
+
+
+
+
+    <section class="conA">
+        <div class="container">
+            
+            <h1>누구나 쉽고 간편하게 모든 분들을 가족같이 대하겠습니다.</h1>
+            <p>어떤 상황이어도 손쉽게 비대면으로 진료 받아보세요</p>
+        </div>
+        <div class="backimg"></div>
+    </section>
+    
+
+    <section class="conB">
+        <div class="container">
+            <div class="text">
+                <img class="gif-img"src="https://i.postimg.cc/PJJTYpW9/free-animated-icon-user-6569161.gif">
+                <a href="#">전문가 찾기</a>
+                <p>전문 의료진을 빠르게 찾을 수 있습니다.</p>
+            </div>
+
+            <div class="text">
+               <img class="gif-img"src="https://i.postimg.cc/sfL4SFy0/free-animated-icon-checklist-6416398.gif">
+                <a href="#">병원찾기</a>
+                <p>근처 병원을 빠르게 찾을 수 있습니다.</p>
+            </div>
+            
+
+            <div class="text">
+               <img class="gif-img"src="https://i.postimg.cc/C5J1Gpnr/free-animated-icon-happy-7158874.gif">
+                <a href="상태보고하기.html">진료시작</a>
+                <p>키워드 진단으로 빠르게 받을 수 있습니다.</p>
+            </div>
+
+
+             <div class="text">
+              <img class="gif-img"src="https://i.postimg.cc/9fFj9wY2/free-animated-icon-verified-7920939.gif">
+                <a href="#">진료예약</a>
+                <p>앞으로의 병원 일정을 관리할 수 있습니다.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="conC">
+
+        <div class="photo brand">
+  <img class="photo-img" src="https://i.postimg.cc/DmVh2cj7/99-21259792-1.jpg">
+    <div class="photo-description-01"></div>
+    
+
+    <div class="photo-name">
+    <p>환자들의 이야기</p>
+    </div>
+
+    <div class="photo-description">
+    <p> 요즘 몸이 왜 이러죠? 조금만 컨디션이 안좋아서 괜히 겁나네요..</p>
+    </div>
+
+ 
+
+    <div class="photo-botton">
+    <a href="#" target="_blank">Read More</a>
+  </div>
+</div>
+
+
+<div class="photo brand">
+  <img class="photo-img" src="http://www.kumc.or.kr/seasonPress/KUMM_vol06/img_sub/KS22_MB_img1.jpg">
+    <div class="photo-description-01"></div>
+    
+
+    <div class="photo-name">
+    <p>인기글 TOP 10</p>
+    </div>
+
+    <div class="photo-description">
+    <p> 병원에서 나만큼 희한한 환자는 못 봤을 거예요. 진짜...</p>
+    </div>
+
+ 
+
+    <div class="photo-botton">
+    <a href="#" target="_blank">Read More</a>
+  </div>
+</div>
+
+<div class="photo brand">
+  <img class="photo-img" src="https://img.freepik.com/free-vector/flat-national-doctor-s-day-background-with-medical-staff_23-2149436871.jpg">
+    <div class="photo-description-01"></div>
+    
+
+    <div class="photo-name">
+    <p>2022 의료인의 날에는</p>
+    </div>
+
+    <div class="photo-description">
+    <p> 이 날은 1948년 제 1회 세계보건총회(World Hea... </p>
+    </div>
+
+ 
+
+    <div class="photo-botton">
+    <a href="#" target="_blank">Read More</a>
+  </div>
+</div>
+
+<div class="photo brand">
+  <img class="photo-img" src="https://img.lovepik.com/background/20211029/medium/lovepik-physicians-day-cartoon-universal-background-image_605671666.jpg">
+    <div class="photo-description-01"></div>
+    
+
+    <div class="photo-name">
+    <p>어느 병원에 가야 될까요?</p>
+    </div>
+
+    <div class="photo-description">
+    <p> 각 증상별로 어느 병원에 가야 되는지에 대해 쉽게 알려..</p>
+    </div>
+
+ 
+
+    <div class="photo-botton">
+    <a href="#" target="_blank">Read More</a>
+  </div>
+</div>
+
+
+    </section>
+
+
+    <section class="conD">
+        <div class="container">
+            <div class="photo"></div>
+            <div class="text">
+                <h2>NEWS</h2>
+                <p>부산 센트럴 병원 정일권 병원장, 대한 병원협회장상 수상</p>
+                <p>[의학신문·일간보사=이균성 기자] 부산 센트럴병원 정일권 병원장이 지난 7일 서면 롯데호텔에서 열린 '부산광역시병원회 확대이사회 및 간담회'에서 대한병원협회 회장상을 수상했다.정 병원장은 환자 중심의 인술과 더불어 지역 의료기술 발전을 위해 노력함은 물론 시민 보건 향상에 기여한 공로가 높이 평가됐다.부산 센트럴병원은 지역사회 통합돌봄ㆍ간호간병통합서비스 등 정부 추진사업이 안정적으로 운영될 수 있도록 지원하며 유소년 스포츠 후원 등 지역민을 위한 봉사활동에 힘쓰고 있다.</p>
+                <a href="병원뉴스.html">읽으러 가기
+                    <span class="fa fa-chevron-right"></span></a>
+            </div>
+        </div>
+    </section>
+
+
+<section class="conE">
+<div class="container">
+  <div class="item"><a href="QnA.html"><img src="https://i.postimg.cc/BvN434cQ/hos.png"></a></div>
+   <div class="item"><a href="QnA.html"><img src="https://i.postimg.cc/hGbDyV3w/A.png"></a></div>
+     <div class="item"><a href="QnA.html"><img src="https://i.postimg.cc/9XShBxQ0/L.png"></a></div>
+     <div class="item"><a href="QnA.html"><img src="https://i.postimg.cc/cCWQq7sn/t.png"></a></div>
+     <div class="item"><a href="QnA.html"><img src="https://i.postimg.cc/y6jQTW6N/pi.png"></a></div>
+     <div class="item"></div>
+     <div class="item"></div>
+     <div class="item"></div>
+     <div class="item"></div>
+   <div class="item"></div>
+  
+  
+</div>
+</section>
+   
+
+    <footer>
+        <div class="container">
+            <div class="footA">
+            <h2>호스피탈</h2>
+            <p>
+                주소: IT 전문서시 위키구 북스동<br>
+                <a href="https://logger.net/">https://hospital.net/</a>
+            </p>
+
+            <nav class="footD">
+                <ul>
+                    <li><a href="#">
+                        <span class="fa fa-twitter" title="Twitter"></span></a></li>
+                     <li><a href="#">
+                        <span class="fa fa-facebook" title="Facebook"></span></a></li>
+                     <li><a href="#">
+                        <span class="fa fa-google-plus" title="google-plus"></span></a></li>
+                     <li><a href="#">
+                        <span class="fa fa-instagram" title="instagram"></span></a></li>
+                    <li><a href="#">
+                        <span class="fa fa-youtube" title="youtube"></span></a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+
+
+        <div class="footB">
+
+
+
+            <div>
+                <h3>ABOUT</h3>
+                <ul>
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">주소</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                    <li><a href="#">문의</a></li>
+                </ul>
+
+
+            </div>
+
+
+            <div>
+                <h3>SUPPORT</h3>
+                <ul>
+                    <li><a href="#">다운로드</a></li>
+                    <li><a href="#">혜택</a></li>
+                    <li><a href="#">자주 묻는 질문</a></li>
+                    <li><a href="#">후기</a></li>
+                </ul>
+
+
+            </div>
+
+
+
+            <div>
+                <h3>CONTENTS</h3>
+                <ul>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">프로필</a></li>
+                    <li><a href="#">개발자</a></li>
+                    <li><a href="#">블로그</a></li>
+                </ul>
+
+
+            </div>
+        </div>
+
+        <div class="footC">
+            © 호스피탈 corp. ALL rights reserved.
+        </div>
+
+
+    </footer>
+
+
+    <style>
+        .sr-only{
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin:-1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border:0;
+        }
+    </style>
+
+
+
+
+</body>
+</html>
